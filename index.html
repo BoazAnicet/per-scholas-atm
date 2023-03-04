@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>ATM Machine</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- Main container -->
+        <div class="container">
+          <div>
+            <div class="screen-and-buttons">
+              <ul class="left-buttons">
+                <li><button id="btn1"></button></li>
+                <li><button id="btn2"></button></li>
+                <li><button id="btn3"></button></li>
+                <li><button id="btn4"></button></li>
+              </ul>
+              <div id="screen">PLEASE INSERT YOUR CARD</div>
+              <ul class="right-buttons">
+                <li><button id="btn5"></button></li>
+                <li><button id="btn6"></button></li>
+                <li><button id="btn7"></button></li>
+                <li><button id="btn8"></button></li>
+              </ul>
+            </div>
+            <div class="numpad">
+              <button onclick="press(1)">1</button>
+              <button onclick="press(2)">2</button>
+              <button onclick="press(3)">3</button>
+              <button onclick="press(4)">4</button>
+              <button onclick="press(5)">5</button>
+              <button onclick="press(6)">6</button>
+              <button onclick="press(7)">7</button>
+              <button onclick="press(8)">8</button>
+              <button onclick="press(9)">9</button>
+              <button onclick="press(0)">0</button>
+              <button onclick="press('enter')">ENTER</button>
+            </div>
+          </div>
+          <div class="card-slot">
+            <div class="credit-card">
+              <button onclick="insertCard()">Insert card</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

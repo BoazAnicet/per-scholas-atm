@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.screen-and-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.screen-and-buttons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.screen-and-buttons ul li button {
+  height: 30px;
+  width: 50px;
+}
+
+.screen-and-buttons ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#screen {
+  height: 250px;
+  /* width: 500px; */
+  /* width: auto; */
+  width: 100%;
+  margin: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.numpad button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.numpad button:hover {
+  cursor: pointer;
+}
+
+.numpad button:last-child {
+  grid-column-start: span 2;
+}
+
+.card-slot {
+  position: relative;
+}
+.credit-card {
+  position: absolute;
+}
